@@ -1,5 +1,34 @@
 
 fn main() {
+    
+    //prints();
+
+    variables();
+
+}
+
+fn variables() {
+    // -----------------------------
+    //  Variables in Rust
+    // -----------------------------
+    let mut x: i64 = 10;
+    println!("The value of x is {}", x);
+    x = 20;
+
+    // -----------------------------
+    //  - Data Types
+    //      - Scalar Data Types
+    //          - Integer
+    //              - Signed i8, i16, i32, i64, i128, isize  
+    //                  - 2^(i-1) -1 to 2^(i-1) -1
+    //                  - 2^(8-1) -1 to 2^(8-1) -1 = -127 to 127
+    //              - Unsigned u8, u16, u32, u64, u128, usize           
+    // -----------------------------
+    println!("the maximun value of i8 is {}", std::i8::MAX);
+}
+
+#[allow(dead_code)]
+fn prints() {
     // Print a string
     println!("The number is {}", 10);
     // Print a string with multiple arguments
